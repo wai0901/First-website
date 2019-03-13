@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.blackInterSection1 {
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: none;
+}
+
+.blackInterSection2 {
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: none;
+}
+
+.container1 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/_DSC1873.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+.oneTop {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    position: fixed;
+}
+
+.oneTopShow {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.8s;
+    position: fixed;
+}
+
+.logo {
+    height: 15vh;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    visibility: hidden;
+}
+
+.burgerNav div {
+    height: 5px;
+    background: rgb(190, 190, 190);
+    margin: 8px 0;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.burgerNav {
+    display: block;
+    margin: 2em 0 0 2em;
+    width: 50px;
+}
+
+.burgerOne {
+    width: 50px;
+}
+
+.burgerTwo {
+    width: 37px;
+}
+
+.burgerThree {
+    width: 25px;
+}
+
+.burgerNav:hover div{
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > ul {
+    margin: 0 0 0 35vw;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > ul > li {
+    float: left;
+    margin-right: 5vw;
+    font-size: 1.2rem;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.btn {
+    display: inline-block;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: rgb(190, 190, 190);
+    transition: width 0.3s;
+}
+
+.btn:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.signIn > a {
+    padding-right: 0.5vw;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.oneMid {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20vh 8vw 0 0;
+    color: rgb(190, 190, 190);
+    font-family: 'Montserrat', sans-serif 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    /* display: none; */
+}
+
+.typeFocus {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.oneMid > h3::after {
+    content: "";
+    display: block;
+    margin-top: 2vh;
+    height: 1px;
+    background: rgb(190, 190, 190);
+
+}
+
+.iconsSocial {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    color: rgb(190, 190, 190);
+    position: fixed;
+}
+
+.iconsSocial > a {
+    margin-right: 2vw;
+    color:rgb(190, 190, 190);
+}
+
+.arrowDown {
+    display: flex;
+    justify-content: center;
+    color: rgb(190, 190, 190);
+    animation: arrowDown 1.5s infinite;
+}
+
+.container2 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 80vh;
+    background: url(../img/_DSC1181-Edit.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.contents2 > h1 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.contents2 {
+    color: rgb(190, 190, 190);
+    margin: 0 8vw 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.container3 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/_DSC4844-Edit_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.contents3 {
+    color: rgb(255, 255, 255);
+    margin: 0 8vw 0 0;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+.contents3 > h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.container4 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/170604_224-Edit-Edit.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.contents4 {
+    color: rgb(190, 190, 190);
+    padding: 0;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.iconsContacts > i {
+    margin-right: 1.5vw;
+}
+
+@media screen and (max-width: 1650px){
+    .menu > ul {
+        margin: 0 0 0 30vw;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    .menu > ul {
+        margin: 0 0 0 30vw;
+    }
+    
+    .oneMid {
+        font-size: 1.2rem;
+    }
+    
+    .typeFocus {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1400px){
+    .logo {
+        display: none;
+    }
+
+    .burger {
+        visibility: visible;
+        margin-left: 230px;
+    }
+
+    .menu {
+        display: unset;
+        width: 200px;
+        height: 100vh;
+        padding-left: 50px;
+        background-color: black;
+        position: absolute;
+        left: -250px;
+        transition: 0.3s;
+    }
+
+    .menuSide {
+        left: 0px;
+        transition: 0.3s;
+    }
+
+    .menu > ul {
+        margin: 0;
+        padding: 0;
+        margin-top: 5vh;
+        list-style-type: none;
+    }
+
+    .menu > ul > li {
+        float: unset;
+        margin-right: 0;
+        font-size: unset;
+    }
+    
+    .menu > ul > li > a {
+        text-decoration: none;
+        padding: 0 0 6vh 30px;
+        color: rgb(190, 190, 190);
+    }
+    
+    .burgerOneTog {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    
+    .burgerTwoTog {
+        opacity: 0;
+    }
+    
+    .burgerThreeTog {
+        width: 50px;
+        transform: rotate(45deg) translate(-8px, -10px);
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .blackInterSection1 {
+        display: block;
+    }
+
+    .blackInterSection2 {
+        display: block;
+    }
+
+    .oneMid {
+        visibility: hidden;
+    }
+
+    .contents2 {
+        display: none;
+    }
+
+    .contents3 {
+        display: none;
+    }
+
+    .contentInterSection1 {
+        margin: 0;
+        padding-top: 5vh;
+        margin: 0 5vw 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(190, 190, 190);
+        line-height: 6vh;
+    }
+
+    .typeFocus {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .contentInterSection2 {
+        margin: 0;
+        padding-top: 2vh;
+        margin: 0 5vw 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        color: rgb(190, 190, 190);
+        line-height: 3.5vh;
+    }
+
+    .contentInterSection2 > h1 {
+        line-height: 5vh;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .contentInterSection2 > h2 {
+        line-height: 4vh;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .container4 {
+        display: grid;
+        grid-template-columns: unset;
+    }
+
+    .contents4 {
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .blackInterSection2 {
+        height: 430px;
+    }
+
+    .menu > ul > li {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .blackInterSection2 {
+        height: 500px;
+    }
+
+    .container1 {
+        background-position-x: -250px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .blackInterSection2 {
+        height: 580px;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    .blackInterSection2 {
+        height: 680px;
+    }
+    
+}
+
+@keyframes arrowDown {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.menuHide {
+    display: none;
+}
